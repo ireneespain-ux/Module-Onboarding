@@ -7,21 +7,51 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
+
   <body>
     <header>
       <h1>Product Pick</h1>
     </header>
+
     <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+       <form>
+        <fieldset>
+          <legend>Customer Information</legend>
+          <div>
+            <label for="customer-name"> Your name:</label>
+            <input type="text" id="customer-name" name="customer-name" placeholder="e.g. Maria Smith" minlength="2" required />
+          </div>
+
+          <div>
+            <label for="customer-email">Email address:</label>
+            <input type="email" id="customer-email" name="customer-email" placeholder="Enter your email" required />
+          </div>
+        </fieldset>
+       
+        
+        <fieldset>
+          <legend>What colour should this T-shirt be?</legend>
+          <input type="radio" id="pink" name="T-shirt color" value="pink" required /><label for="pink">Pink</label>
+          <input type="radio" id="blue" name="T-shirt color" value="blue" required /><label for="blue">Blue</label>
+          <input type="radio" id="green" name="T-shirt color" value="green" required /><label for="green">Green</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>What size should this T-shirt be?</legend>
+          <input type="radio" id="XS" name="T-shirt size" value="extra small" required /><label for="XS">XS</label>
+          <input type="radio" id="S" name="T-shirt size" value="small" required /><label for="S">S</label>
+          <input type="radio" id="M" name="T-shirt size" value="medium" required /><label for="M">M</label>
+          <input type="radio" id="L" name="T-shirt size" value="large" required /><label for="L">L</label>
+          <input type="radio" id="XL" name="T-shirt size" value="extra large" required /><label for="XL">XL</label>
+          <input type="radio" id="XXL" name="T-shirt size" value="extra extra large" required /><label for="XXL">XXL</label>
+        </fieldset>
+        
+        <button type="submit">Submit order</button>
       </form>
     </main>
+
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Irene Ha</h2>
     </footer>
   </body>
 </html>
